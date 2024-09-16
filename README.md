@@ -51,25 +51,25 @@ Copy code
 
 npm install:
 
-"axios": "^1.7.7",
+&nbsp;&nbsp;&nbsp;"axios": "^1.7.7",
 
-&nbsp;   "bcryptjs": "^2.4.3",
+&nbsp;&nbsp;&nbsp;&nbsp;   "bcryptjs": "^2.4.3",
 
-&nbsp;   "firebase": "^10.13.1",
+&nbsp;&nbsp;&nbsp;&nbsp;   "firebase": "^10.13.1",
 
-&nbsp;   "jsonwebtoken": "^9.0.2",
+&nbsp;&nbsp;&nbsp;&nbsp;   "jsonwebtoken": "^9.0.2",
 
-&nbsp;   "quill": "^2.0.2",
+&nbsp;&nbsp;&nbsp;&nbsp;   "quill": "^2.0.2",
 
-&nbsp;   "react": "^18.3.1",
+&nbsp;&nbsp;&nbsp;&nbsp;   "react": "^18.3.1",
 
-&nbsp;   "react-dom": "^18.3.1",
+&nbsp;&nbsp;&nbsp;&nbsp;   "react-dom": "^18.3.1",
 
-&nbsp;   "react-router-dom": "^6.26.2",
+&nbsp;&nbsp;&nbsp;&nbsp;   "react-router-dom": "^6.26.2",
 
-&nbsp;   "react-scripts": "5.0.1",
+&nbsp;&nbsp;&nbsp;&nbsp;   "react-scripts": "5.0.1",
 
-&nbsp;   "socket.io-client": "^4.7.5",
+&nbsp;&nbsp;&nbsp;&nbsp;   "socket.io-client": "^4.7.5",
 
 1. **Setup environment variables:**
 
@@ -107,29 +107,23 @@ Backend:
 
 1. **Clone the repository:**
 
-bash
+&nbsp;&nbsp;&nbsp;bash
 
-Copy code
+&nbsp;&nbsp;&nbsp;Copy code
 
-git clone <https://github.com/your-repo/project-management-platform.git>
+&nbsp;&nbsp;&nbsp;git clone <https://github.com/your-repo/project-management-platform.git>
 
-cd project-management-platform
+&nbsp;&nbsp;&nbsp;cd project-management-platform
 
 1. Install Dependencies:
 
 npm install :
-
-"bcryptjs": "^2.4.3",
-
-“cors": "^2.8.5",
-
-"express": "^4.21.0",
-
-"jsonwebtoken": "^9.0.2",
-
-"mongoose": "^8.6.2",
-
-"socket.io": "^4.7.5"
+&nbsp;&nbsp;&nbsp;"bcryptjs": "^2.4.3",
+&nbsp;&nbsp;&nbsp;“cors": "^2.8.5",
+&nbsp;&nbsp;&nbsp;"express": "^4.21.0",
+&nbsp;&nbsp;&nbsp;"jsonwebtoken": "^9.0.2",
+&nbsp;&nbsp;&nbsp;"mongoose": "^8.6.2",
+&nbsp;&nbsp;&nbsp;"socket.io": "^4.7.5"
 
 1. Start application:
 
