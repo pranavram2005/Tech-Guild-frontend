@@ -118,6 +118,7 @@ Backend:
 1. Install Dependencies:
 
 npm install :
+
 &nbsp;&nbsp;&nbsp;"bcryptjs": "^2.4.3",
 
 &nbsp;&nbsp;&nbsp;“cors": "^2.8.5",
