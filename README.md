@@ -119,25 +119,30 @@ Backend:
 
 npm install :
 &nbsp;&nbsp;&nbsp;"bcryptjs": "^2.4.3",
+
 &nbsp;&nbsp;&nbsp;“cors": "^2.8.5",
+
 &nbsp;&nbsp;&nbsp;"express": "^4.21.0",
+
 &nbsp;&nbsp;&nbsp;"jsonwebtoken": "^9.0.2",
+
 &nbsp;&nbsp;&nbsp;"mongoose": "^8.6.2",
+
 &nbsp;&nbsp;&nbsp;"socket.io": "^4.7.5"
 
 1. Start application:
 
-node app.js
+&nbsp;&nbsp;&nbsp;node app.js
 
-you should see the following:
+&nbsp;&nbsp;&nbsp;you should see the following:
 
-Server is running on <http://localhost:5000>
+&nbsp;&nbsp;&nbsp;Server is running on <http://localhost:5000>
 
-User connected: ByOsKi-ki_dO4h5eAAAH
+&nbsp;&nbsp;&nbsp;User connected: ByOsKi-ki_dO4h5eAAAH
 
-User connected: wZowZCSENX8_N8h2AAAI
+&nbsp;&nbsp;&nbsp;User connected: wZowZCSENX8_N8h2AAAI
 
-MongoDB connected
+&nbsp;&nbsp;&nbsp;MongoDB connected
 
 (No .env files you can directly run without worrying about mongodb—make sure you turned off firewall)
 
