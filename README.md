@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+**Project Management Platform**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Overview**
 
-## Available Scripts
+Welcome to the Project Management Platform. This application is designed to help members track their project statuses, communicate via chat, and engage in video calls. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), this platform offers a flawless user experience with real-time communication features.
 
-In the project directory, you can run:
+**Features**
 
-### `npm start`
+- **Project Status Tracking**: Members can view the status of their projects and update their progress.
+- **Real-time Chat**: Engage in real-time conversations with other members using our chat feature.
+- **Video Calling**: Use Firebase to make video calls between members.
+- **Admin Privileges**: Admins can add, edit, and delete projects, ensuring effective management of project data.
+- **Collaborative Document Editing**: Users can create a new document file and other users can also contribute their work through it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Technologies Used**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **MongoDB**: NoSQL database for storing project and user data.
+- **Express.js**: Web framework for building RESTful APIs.
+- **React.js**: Frontend library for creating dynamic and responsive user interfaces.
+- **Node.js**: JavaScript runtime for building server-side applications.
+- **Socket**.**IO**: Socket.IO is a JavaScript library that enables real-time, bidirectional communication between web clients and servers.
+- **Firebase**: For real-time video calling functionality.
 
-### `npm test`
+**Getting Started**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Prerequisites**
 
-### `npm run build`
+- Node.js (version 14 or higher)
+- MongoDB (local or cloud instance)
+- Firebase project setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Installation**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Frontend:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
 
-### `npm run eject`
+bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Copy code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone <https://github.com/your-repo/project-management-platform.git>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+cd project-management-platform
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Install dependencies:**
 
-## Learn More
+bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Copy code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install:
 
-### Code Splitting
+"axios": "^1.7.7",
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+&nbsp;   "bcryptjs": "^2.4.3",
 
-### Analyzing the Bundle Size
+&nbsp;   "firebase": "^10.13.1",
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+&nbsp;   "jsonwebtoken": "^9.0.2",
 
-### Making a Progressive Web App
+&nbsp;   "quill": "^2.0.2",
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+&nbsp;   "react": "^18.3.1",
 
-### Advanced Configuration
+&nbsp;   "react-dom": "^18.3.1",
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+&nbsp;   "react-router-dom": "^6.26.2",
 
-### Deployment
+&nbsp;   "react-scripts": "5.0.1",
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+&nbsp;   "socket.io-client": "^4.7.5",
 
-### `npm run build` fails to minify
+1. **Setup environment variables:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create a .env file in the root directory and add the following variables:
+
+env
+
+Copy code
+
+FIREBASE_API_KEY=your_firebase_api_key
+
+FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+
+FIREBASE_PROJECT_ID=your_firebase_project_id
+
+FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+
+FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+
+FIREBASE_APP_ID=your_firebase_app_id
+
+1. **Start the application:**
+
+bash
+
+Copy code
+
+npm start
+
+1. **Access the application:**
+
+Open your web browser and go to <http://localhost:3000>.
+
+Backend:
+
+1. **Clone the repository:**
+
+bash
+
+Copy code
+
+git clone <https://github.com/your-repo/project-management-platform.git>
+
+cd project-management-platform
+
+1. Install Dependencies:
+
+npm install :
+
+"bcryptjs": "^2.4.3",
+
+“cors": "^2.8.5",
+
+"express": "^4.21.0",
+
+"jsonwebtoken": "^9.0.2",
+
+"mongoose": "^8.6.2",
+
+"socket.io": "^4.7.5"
+
+1. Start application:
+
+node app.js
+
+you should see the following:
+
+Server is running on <http://localhost:5000>
+
+User connected: ByOsKi-ki_dO4h5eAAAH
+
+User connected: wZowZCSENX8_N8h2AAAI
+
+MongoDB connected
+
+(No .env files you can directly run without worrying about mongodb—make sure you turned off firewall)
+
+**Admin Features**
+
+Admins have special privileges to manage projects:
+
+- **Add Projects**: Admins can add new projects to the platform.
+- **Edit Projects**: Admins can edit existing project details.
+- **Delete Projects**: Admins can remove projects from the platform.
+
+**Usage**
+
+- **Dashboard**: Members can view their project statuses and update progress.
+- **Chat**: Navigate to the chat section to start or join conversations with other members.
+- **Video Calls**: Use the video call feature to connect with other members in real time.
+- **Collaborative Writing**: Users can write their contributions in a single document
+
+**Contributing**
+
+We welcome contributions to improve the Project Management Platform! If you have suggestions or find issues, please submit a pull request or create an issue on GitHub.
+
+**Project Members:**
+
+- Pranav Ram P S (BS23B012) – pranavram2005 (Github)
+
+Did the User side backend part (except conference) and admin side backend part
+
+- Mogith Guru A M (CH23B096) – Bash-n-Git (Github)
+
+Did User side frontend, video conference backend, admin page, login and registration page.
