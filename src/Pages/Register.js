@@ -18,27 +18,29 @@ const Register = (props)=>{
         
     return(
         <>
-        <div> <form onSubmit={handleRegisterSubmit}>
-        <div className='mt-3 mb-3'>
-          <label className='form=label' htmlFor='name'>Name:</label>
-          <input type='text' id='name' name='name' className='form-control' onChange={handleRegisterInput} value={Reg.name}/>
+        <form onSubmit={handleRegisterSubmit}>
+        {/* <div>
+          <input type='text' id='name' name='name' className='form-control' placeholder='name' onChange={handleRegisterInput} value={Reg.name}/>
+          <input type='text' id='email' name='email' className='form-control' placeholder='email' onChange={handleRegisterInput} value={Reg.email}/>
+          <input type='text' id='password' name='password' className='form-control' placeholder='password' onChange={handleRegisterInput} value={Reg.password}/>
+          <input type='text' id='department' name='department' className='form-control' placeholder='department' onChange={handleRegisterInput} value={Reg.department}/>
           </div>
-          <div className='mt-3 mb-3'>
-          <label className='form=label' htmlFor='email'>Email:</label>
-          <input type='text' id='email' name='email' className='form-control' onChange={handleRegisterInput} value={Reg.email}/>
-          </div>
-          <div className='mt-3 mb-3'>
-          <label className='form=label' htmlFor='password'>Password:</label>
-          <input type='text' id='password' name='password' className='form-control' onChange={handleRegisterInput} value={Reg.password}/>
-          </div>
-          <div className='mt-3 mb-3'>
-          <label className='form=label' htmlFor='department'>Role:</label>
-          <input type='text' id='department' name='department' className='form-control' onChange={handleRegisterInput} value={Reg.department}/>
-          </div>
-    
-          <button className='btn btn-primary' type='submit'>Submit</button>
-          
-        </form></div>
+          <button className='ghost1' type='submit'>Submit</button>
+           */}
+           <div class="form-floating">
+           <input type='text' id='name' name='name' className='input' placeholder='Name' onChange={handleRegisterInput} value={Reg.name}/>
+  </div>
+  <div class="form-floating">
+  <input type='text' id='email' name='email' className='input' placeholder='Email' onChange={handleRegisterInput} value={Reg.email}/>
+  </div>
+  <div class="form-floating">
+  <input type='text' id='password' name='password' className='input' placeholder='Password' onChange={handleRegisterInput} value={Reg.password}/>
+  </div>
+  <div class="form-floating">
+  <input type='text' id='department' name='department' className='input' placeholder='Department' onChange={handleRegisterInput} value={Reg.department}/>
+  </div>
+  <button className='ghost1' type='submit'>Submit</button>
+        </form>
         </>
     )
 }

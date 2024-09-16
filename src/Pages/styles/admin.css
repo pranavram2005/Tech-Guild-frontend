@@ -1,0 +1,16 @@
+.members{
+    width: 70%;
+    margin-left: 270px;
+}
+.project-box{
+    background-color: aqua;
+    width: 300px;
+}
+.griod{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.del{
+    width: 100%;
+    font-size: 23px;
+}

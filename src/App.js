@@ -7,6 +7,7 @@ import User from './Pages/User';
 import axios from 'axios';
 import Register from './Pages/Register';
 import Createproject from './Pages/Createproject';
+import Uhomepage from './Pages/Uhomepage';
 function App() {
   const [Userdata,SetUserdata] = useState([])
   async function fetchdata(){
@@ -30,12 +31,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h2>Task Management</h2>
         <Routes>
           <Route path="/admin" element={<Admin Projectdata={Projectdata} Userdata={Userdata} fetchprojectdata={fetchprojectdata}/>} />
-          <Route path="/" element={<Login Userdata={Userdata}/>} />
-          <Route path="/user" element={<User Projectdata={Projectdata} fetchprojectdata={fetchprojectdata} />} />
-          <Route path="/register" element={<Register fetchdata={fetchdata}/>} />
+          <Route path="/" element={<Uhomepage/>}/>
+          <Route path="/user" element={<User Userdata={Userdata} Projectdata={Projectdata} fetchprojectdata={fetchprojectdata} />} />
+          <Route path="/register"/>
           <Route path="/createproject" element={<Createproject Userdata={Userdata} fetchprojectdata={fetchprojectdata}/>}/>
         </Routes>
       </div>

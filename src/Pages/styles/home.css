@@ -1,0 +1,67 @@
+/* ProjectCard.css */
+.project-card {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 85%;
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.project-card p{
+    font-size: 23px;
+}
+.project-card.completed {
+    border-left: 5px solid #28a745;
+}
+
+.project-card.working {
+    border-left: 5px solid #ffc107;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.status input {
+    margin-right: 8px;
+}
+.done{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    background-color: #28a745;
+}
+.nodone{
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+ background-color: #ffc107;   
+}
+
+.no{
+    display: none;
+}
+.p1{
+    display: block;
+}
+.uhome{
+    min-height: 100vh;
+    height: 100%;
+}

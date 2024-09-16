@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Register from './Register';
 function Login(props) {
   const initialformstate = {email:"",password:""}
   const [nextpage,setNextPage] = useState(null)
@@ -23,12 +24,11 @@ function Login(props) {
     }
   }  
   return (
-    <div className="App">
-      {User.email},{User.password}
-      {props.Userdata.email}
+    <div className="i">
+      
       <div><form onSubmit={loginSubmit}>
-        UserName:<input type='text' onChange={handleLogin} name='email' value={User.email}/>
-        Password:<input type='password' onChange={handleLogin} name='password' value={User.password}/>
+        <input type='text' onChange={handleLogin} placeholder='Email' name='email' value={User.email}/>
+       <input type='password' onChange={handleLogin} placeholder='Password' name='password' value={User.password}/>
         <button type='submit'>Submit</button>
         </form></div>
     </div>

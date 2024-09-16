@@ -1,0 +1,88 @@
+/* HomePage.css */
+.homepage {
+  display: flex;
+  justify-content: center; /* Center the content */
+}
+
+
+
+.main-content {
+  flex: 1; /* Take remaining space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+/* Center the table within the main content */
+.projects-table {
+  width: 80%; /* Adjust width to control how much space the table occupies */
+  border-collapse: collapse;
+}
+
+.projects-table th, .projects-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.projects-table th {
+  background-color: #f2f2f2;
+}
+
+.projects-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Center the form section within the main content */
+.form-section {
+    height: 84vh;
+  margin-top: 100px;
+  margin-left: 300px;
+  width: 60%; /* Match the table width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section input {
+  height: 50px;
+  margin: 5px;
+  padding: 8px;
+  width: calc(100% - 20px); /* Make inputs occupy full width */
+}
+.form-section textarea {
+    margin: 5px;
+    padding: 8px;
+    width: calc(100% - 20px); /* Make inputs occupy full width */
+  }
+  .tasks select{
+    margin: 5px;
+    padding: 8px;
+    width: calc(100% - 20px); /* Make inputs occupy full width */
+  }
+  .tasks{
+    width: 99%;
+    display: flex;
+  }
+  .tasks div button{
+    margin-left: 150px;
+  }
+.form-section button
+.form-section button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-section button:hover {
+  background-color: #555;
+}
+.reqs{
+    background-color: white;
+    color: black;
+    width: 80%;
+}
