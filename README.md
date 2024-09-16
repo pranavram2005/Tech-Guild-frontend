@@ -71,25 +71,6 @@ npm install:
 
 &nbsp;&nbsp;&nbsp;&nbsp;   "socket.io-client": "^4.7.5",
 
-1. **Setup environment variables:**
-
-Create a .env file in the root directory and add the following variables:
-
-env
-
-Copy code
-
-FIREBASE_API_KEY=your_firebase_api_key
-
-FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-
-FIREBASE_PROJECT_ID=your_firebase_project_id
-
-FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-
-FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-
-FIREBASE_APP_ID=your_firebase_app_id
 
 1. **Start the application:**
 
