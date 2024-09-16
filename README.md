@@ -146,13 +146,11 @@ Admins have special privileges to manage projects:
 **Contributing**
 
 We welcome contributions to improve the Project Management Platform! If you have suggestions or find issues, please submit a pull request or create an issue on GitHub.
+** Project Members**
+Pranav Ram P S (BS23B012) – pranavram2005 (Github)
 
-**Project Members:**
-
-- Pranav Ram P S (BS23B012) – pranavram2005 (Github)
-
-Did the User side backend part (except conference) and admin side backend part
+Did the User side backend part (except conference) and frontend part
 
 - Mogith Guru A M (CH23B096) – Bash-n-Git (Github)
 
-Did User side frontend, video conference backend, admin page, login and registration page.
+Did video conference, admin page, login and registration page
