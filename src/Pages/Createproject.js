@@ -6,10 +6,9 @@ import { Link } from 'react-router-dom';
 const Createproject = (props) => {
     const initialFormState = { title: "", description: "", requirements: [],deadline:"" };
     const [project, setProject] = useState(initialFormState);
-    const [task, setTask] = useState(""); // for the requirement task input
-    const [id, setId] = useState(""); // for the requirement id input
+    const [task, setTask] = useState(""); 
+    const [id, setId] = useState(""); 
     const addReq = () => {
-        // Validate and add requirement
 
         if (task && id ) {
             setProject(prev => ({
@@ -42,7 +41,7 @@ const Createproject = (props) => {
   
     const handleSignIn = () => {
       setSignedIn(true);
-      navigate('/'); // Navigate to home page after sign-in
+      navigate('/'); 
   };
     return (
         <>

@@ -26,7 +26,7 @@ const ProjectTable = ({ Projectdata, fetchprojectdata, Userdata }) => {
 
             await axios.put(`http://localhost:5000/project/${projectId}/requirement/${requirementId}`, { status: newStatus });
             fetchprojectdata();
-            setEffect(requirementId);  // Set the effect state to trigger rerender
+            setEffect(requirementId);  
             
             alert('Status updated successfully!');
         } catch (error) {
@@ -37,7 +37,7 @@ const ProjectTable = ({ Projectdata, fetchprojectdata, Userdata }) => {
 
     const handleSignIn = () => {
         setSignedIn(true);
-        navigate('/'); // Navigate to home page after sign-in
+        navigate('/'); 
     };
 
     return (

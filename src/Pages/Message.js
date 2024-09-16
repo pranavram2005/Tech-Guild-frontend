@@ -42,7 +42,7 @@ const Chat = (props) => {
   };
 
   return (
-    <div>
+    <div className='message-box'>
       <div className='cbody'>
       <div className='chats'>
         {props.Userdata.map((u)=>{
@@ -56,13 +56,12 @@ const Chat = (props) => {
       <h1 className='text-center text-dark'>Chat</h1>
 
         <div className='messaging'>
-          <div className=''>
         {messages.map((msg, index) => (
           <div key={index}>
             <span className={msg.sender === UID ? 'send' : 'receive'}>{msg.content}</span>
             
           </div>
-        ))}</div>
+        ))}
             <input
         type="text"
         value={message}

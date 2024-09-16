@@ -1,26 +1,23 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 import Quill from 'quill';
-import 'quill/dist/quill.snow.css';  // Import Quill's CSS
+import 'quill/dist/quill.snow.css';  
 
-const SAVE_INTERVAL_MS = 2000;  // Save every 2 seconds
+const SAVE_INTERVAL_MS = 2000;  
 
 const Editor = ({ documentId }) => {
   const [socket, setSocket] = useState();
   const [quill, setQuill] = useState();
 
-  // Connect to the server when the component mounts
   useEffect(() => {
     const s = io('http://localhost:5000');
     setSocket(s);
 
-    // Cleanup when component unmounts
     return () => {
       s.disconnect();
     };
   }, []);
 
-  // Load document content
   useEffect(() => {
     if (!socket || !quill) return;
 
@@ -32,7 +29,6 @@ const Editor = ({ documentId }) => {
     socket.emit('join-room', documentId);
   }, [socket, quill, documentId]);
 
-  // Handle real-time updates
   useEffect(() => {
     if (!socket || !quill) return;
 
@@ -47,7 +43,6 @@ const Editor = ({ documentId }) => {
     };
   }, [socket, quill]);
 
-  // Broadcast changes made by the user to others
   useEffect(() => {
     if (!socket || !quill) return;
 
@@ -63,7 +58,6 @@ const Editor = ({ documentId }) => {
     };
   }, [socket, quill]);
 
-  // Auto-save document content
   useEffect(() => {
     if (!socket || !quill) return;
 
@@ -76,12 +70,10 @@ const Editor = ({ documentId }) => {
     };
   }, [socket, quill]);
 
-  // Setup Quill editor
   const wrapperRef = useCallback((wrapper) => {
     if (!wrapper) return;
 
-    wrapper.innerHTML = '';  // Clear existing content
-
+    wrapper.innerHTML = '';  
     const editor = document.createElement('div');
     wrapper.append(editor);
 

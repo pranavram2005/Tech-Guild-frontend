@@ -28,7 +28,6 @@ const Uhomepage = ()=>{
 
   
     return(
-    //     <Register  fetchdata={fetchdata}/></>
  
 
     

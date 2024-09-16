@@ -60,8 +60,14 @@
 }
 .p1{
     display: block;
+    min-height: 100vh;
+    height: 100%;
 }
 .uhome{
+    min-height: 100vh;
+    height: 100%;
+}
+.message-box{
     min-height: 100vh;
     height: 100%;
 }

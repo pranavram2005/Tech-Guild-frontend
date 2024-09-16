@@ -16,7 +16,7 @@ const Admin = (props) => {
 
   const handleSignIn = () => {
     setSignedIn(true);
-    navigate('/'); // Navigate to home page after sign-in
+    navigate('/'); 
 };
     return (
         <>
@@ -69,7 +69,6 @@ const Admin = (props) => {
                         <tr><th>Name</th><th>Task</th><th>Status</th></tr>
                             {p.requirements.length > 0 ? (
                                 p.requirements.map((r) => {
-                                    // Find the user associated with the requirement
                                     const user = props.Userdata.find((u) => u.uid === r.id);
 
                                     return (

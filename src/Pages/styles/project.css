@@ -49,17 +49,17 @@
   height: 50px;
   margin: 5px;
   padding: 8px;
-  width: calc(100% - 20px); /* Make inputs occupy full width */
+  width: calc(100% - 20px); 
 }
 .form-section textarea {
     margin: 5px;
     padding: 8px;
-    width: calc(100% - 20px); /* Make inputs occupy full width */
+    width: calc(100% - 20px); 
   }
   .tasks select{
     margin: 5px;
     padding: 8px;
-    width: calc(100% - 20px); /* Make inputs occupy full width */
+    width: calc(100% - 20px); 
   }
   .tasks{
     width: 99%;

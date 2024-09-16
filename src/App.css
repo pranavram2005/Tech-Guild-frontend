@@ -1,4 +1,3 @@
-/* App styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,7 +22,6 @@
   }
 }
 
-/* Component specific styling */
 .hi {
   border: 2px solid black;
   background-color: #282c34;
@@ -46,17 +44,17 @@
   width: 100%;
 }
 
-/* Chat component styling */
 .cbody {
   display: flex;
-  height: 100vh; /* Full height to accommodate the entire screen */
+  min-height: 100vh;
+  height: auto; 
 }
 
 .chats {
   width: 30%;
   background-color: #f1f1f1;
   border-right: 1px solid #ccc;
-  overflow-y: auto; /* Scrollable area for member list */
+  overflow-y: auto; 
   box-sizing: border-box;
 }
 
@@ -76,6 +74,8 @@
 }
 
 .message-body {
+  min-height: 100vh;
+  height: auto;
   width: 70%;
   background-color: #fcfcfc;
   display: flex;
@@ -94,7 +94,8 @@
 .messaging {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 40px); /* Adjust height considering the header */
+  gap: 20px;
+  height: calc(100vh - 40px); 
   position: relative;
 }
 
@@ -105,25 +106,26 @@
 }
 
 .messaging .send {
-  margin-top: 50px;
+  margin-top: 160px;
+  margin-left: 1100px;
   background-color: #07ae34;
   color: white;
-  padding: 30px;
+  padding: 5px;
   border-radius: 8px;
-  align-self: flex-end; /* Align to the right for sent messages */
+  align-self: flex-end; 
 }
 
 .messaging .receive {
   margin-top: 50px;
-
-  background-color: #ececec;
+  margin-left: 50px;
+  background-color: #8b8585;
   padding: 10px;
   border-radius: 8px;
-  align-self: flex-start; /* Align to the left for received messages */
+  align-self: flex-start; 
 }
 
 .messaging input {
-  width: calc(100% - 80px); /* Adjust width considering the send button */
+  width: calc(100% - 80px); 
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
